@@ -17,7 +17,7 @@ public class Coordinate {
     }
 
     /**
-     *Copy Constructor.
+     * Copy Constructor.
      * @param c
      */
     public Coordinate(Coordinate c){

@@ -150,7 +150,18 @@ public class Vector {
         Coordinate x = new Coordinate(0);
         Coordinate y = new Coordinate(-1*_head._z.get());
         Coordinate z = new Coordinate(_head._y);
-        return new Vector(new Point3D(x,y,z));
+        return new Vector(new Point3D(x,y,z));//Chelli pas daccord !!
+    }
+
+    /***
+     * @param v The vector who with test the colinearity
+     * @return True if they are colineare
+     */
+    public boolean isColinear(Vector v){
+        // If the cross product of two vector is null there are colinear.
+        if(crossProdcut(this, v).size()==0)
+            return true;
+        return false;
     }
 
 

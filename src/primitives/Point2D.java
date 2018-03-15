@@ -33,8 +33,8 @@ public class Point2D {
      * Copy Constructor.
      */
     public Point2D(Point2D obj) {
-        _x = new Coordinate(obj._x);
-        _y = new Coordinate(obj._y);
+        this._x = new Coordinate(obj._x);
+        this._y = new Coordinate(obj._y);
     }
 
     // ***************** Getters/Setters ********************** //
